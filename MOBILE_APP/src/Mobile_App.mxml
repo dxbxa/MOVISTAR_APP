@@ -4,4 +4,11 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	<s:ViewNavigator width="100%" height="100%" label="A1" firstView="views.A1View" title="A1"/>
+	<s:ViewNavigator width="100%" height="100%" label="Recarga" firstView="views.RecargaView"
+					 title="recarga"/>
+	<s:ViewNavigator width="100%" height="100%" label="Consumo" firstView="views.ConsumoView"
+					 title="Consumo"/>
+	<s:ViewNavigator width="100%" height="100%" label="Parque" firstView="views.ParqueView"
+					 title="Parque"/>
 </s:TabbedViewNavigatorApplication>

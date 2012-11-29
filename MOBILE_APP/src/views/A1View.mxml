@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+		title="A1">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<mx:PieChart id="A1" x="115" y="23" width="290" height="251">
+		<mx:series>
+			<mx:PieSeries displayName="Clientes" field=""/>
+		</mx:series>
+	</mx:PieChart>
+	<mx:Legend dataProvider="{A1}"/>
+</s:View>
