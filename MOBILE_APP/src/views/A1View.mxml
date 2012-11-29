@@ -6,10 +6,12 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<mx:PieChart id="A1" x="115" y="23" width="290" height="251">
+
+	<mx:ColumnChart id="columnchart1" x="97" y="20" width="334" height="171">
 		<mx:series>
-			<mx:PieSeries displayName="Clientes" field=""/>
+			<mx:ColumnSeries displayName="Series 1" yField=""/>
 		</mx:series>
-	</mx:PieChart>
-	<mx:Legend dataProvider="{A1}"/>
+	</mx:ColumnChart>
+	<mx:Legend dataProvider="{columnchart1}"/>
 </s:View>
+

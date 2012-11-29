@@ -1,0 +1,74 @@
+
+<model xmlns="http://ns.adobe.com/Fiber/1.0">
+  <annotation name="ActionScriptGeneration">
+    <item name="FullyQualifyReferences">true</item>
+  </annotation>
+  <service name="Build">
+    <annotation name="ActionScriptGeneration">
+      <item name="ServiceType">HTTPMultiService</item>
+      <item name="Package">services.build</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">XML</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="LINKED_FILE">build.xml</item>
+    </annotation>
+    <function name="getData" return-type="Project">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="ActionScriptGeneration">
+        <item name="SerializationFilter">com.adobe.serializers.xml.XMLSerializationFilter</item>
+        <item name="method">GET</item>
+        <item name="url">C:/Users/M-01/Desktop/MOVISTAR_APP/WEB_SERVICE/build.xml</item>
+      </annotation>
+      <annotation name="url group">
+        <item name="displayUrl">C:\Users\M-01\Desktop\MOVISTAR_APP\WEB_SERVICE\build.xml</item>
+        <item name="completeURL">C:/Users/M-01/Desktop/MOVISTAR_APP/WEB_SERVICE/build.xml</item>
+        <item name="isUrl">false</item>
+      </annotation>
+      <annotation name="Properties">
+        <item name="xPath">/</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+  </service>
+  <entity name="Import">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Import</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">Build</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <property name="file" type="string" required="true"/>
+  </entity>
+  <entity name="Project">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Project</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">Build</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <property name="name" type="string" required="true"/>
+    <property name="_default" type="string" required="true"/>
+    <property name="basedir" type="string" required="true"/>
+    <property name="description" type="string" required="true"/>
+    <property name="_import" type="Import" required="true"/>
+  </entity>
+</model>
