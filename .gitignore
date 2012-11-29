@@ -1,4 +1,11 @@
 #################
+## FlashBuilder
+#################
+.actionScriptProperties
+.flexProperties
+bin-debug/
+
+#################
 ## Eclipse
 #################
 
